@@ -96,8 +96,8 @@ class ChartGenerator {
 			objDataset2.setValue(version.getDataFloat("complexityDs"),"",String.valueOf(version.getDataInt("id")));
 			objDataset3.setValue(version.getDataInt("maintAct"),"",String.valueOf(version.getDataInt("id")));
 		}
-		charts.add(makeBarChart("Πολυπλοκότητα λειτουργιών","Πολυπλοκότητα","Έκδοση",objDataset1));
-		charts.add(makeBarChart("Πολυπλοκότητα δομών δεδομένων","Πολυπλοκότητα","Έκδοση",objDataset2));
+		charts.add(makeLineChart("Πολυπλοκότητα λειτουργιών","Πολυπλοκότητα","Έκδοση",objDataset1,false));
+		charts.add(makeLineChart("Πολυπλοκότητα δομών δεδομένων","Πολυπλοκότητα","Έκδοση",objDataset2,false));
 		charts.add(makeBarChart("Πλήθος δραστηριοτήτων συντήρησης","Πλήθος δραστηριοτήτων","Έκδοση",objDataset3));
 		return charts;
 	}

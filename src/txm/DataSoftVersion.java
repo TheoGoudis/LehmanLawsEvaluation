@@ -49,7 +49,7 @@ class DataSoftVersion implements Cloneable, Comparable<DataSoftVersion>{
 	public void generateExtraData(int prevTotalOp, int prevTotalDs, LocalDate prevDate){
 		try{
 			totalOp=prevTotalOp+opAdded-opDeleted;
-			totalDs=prevTotalDs+dsAdded-dsUpdated;
+			totalDs=prevTotalDs+dsAdded-dsDeleted;
 			growthOp=totalOp-prevTotalOp;
 			growthDs=totalDs-prevTotalDs;
 			if(opAdded!=0)
